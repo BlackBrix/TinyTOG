@@ -123,10 +123,9 @@ Folgende Werte ergeben sich für den Ölsensor (049 919 563 B) zur Messung des W
     
 *   10 Bit-Analog-/Digital-Konverter (ADC)
     
-
 Öltemperatur | Ölsensor | U-variabel | ADC | ADCH | 1\. Puls | Pulspause | 2\. Puls
-\[°C\] | \[Ohm\] | \[V\] | (10 Bit) | (8 Bit) | \[ms\] | \[ms\] | \[ms\]
 ------------ | -------- | ---------- | -------- | -------- | -------- | -------- | -------
+**\[°C\]** | **\[Ohm\]** | **\[V\]** | **(10 Bit)** | **(8 Bit)** | **\[ms\]** | **\[ms\]** | **\[ms\]**
 41 | 1200 | 4,80 | 983 | 246 | 20,00 | 23,00 | 24,00  
 60 | 550 | 4,58 | 939 | 235 | 20,00 | 26,25 | 27,00  
 65 | 420 | 4,47 | 915 | 229 | 20,00 | 27,00 | 27,75  
