@@ -125,7 +125,6 @@ Folgende Werte ergeben sich für den Ölsensor (049 919 563 B) zur Messung des W
     
 
 Öltemperatur | Ölsensor | U-variabel | ADC | ADCH | 1\. Puls | Pulspause | 2\. Puls
------------- | -------- | ---------- | -------- | -------- | -------- | -------- | -------
 \[°C\] | \[Ohm\] | \[V\] | (10 Bit) | (8 Bit) | \[ms\] | \[ms\] | \[ms\]
 ------------ | -------- | ---------- | -------- | -------- | -------- | -------- | -------
 41 | 1200 | 4,80 | 983 | 246 | 20,00 | 23,00 | 24,00  
