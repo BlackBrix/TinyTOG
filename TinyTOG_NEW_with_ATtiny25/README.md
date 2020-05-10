@@ -414,7 +414,7 @@ In diesem Dump wurde der Wert 0xC041 in Big-Endian gespeichert, d. h. erst C0 un
 Downloads
 ---------
 
-*   [TinyTOG für ATtiny25 (zip)](http://www.whoopsie.de/home/lib/exe/fetch.php?media=topic03:item003:kombi_tinytog_attiny25.zip "topic03:item003:kombi_tinytog_attiny25.zip")
+*   [Firmware](https://github.com/BlackBrix/TinyTOG/tree/master/TinyTOG_NEW_with_ATtiny25/firmware)
     
 
 Quellen
