@@ -103,7 +103,7 @@ Das neue KI hat ein paar mehr Anzeige-Möglichkeiten als das alte KI, sofern ent
 
 Das neue KI wird immer eine Ölstandswarnmeldung anzeigen, wenn es kein plausibles Signal von einem TOG bekommt.
 
-[![](Audi%20S4%20B5%20-%20Kombiinstrument-Umbau%20von%20Vor-Facelift%20zu%20Facelift%20-%20.whoopsie%27s-Dateien/fetch_005.png)](http://www.whoopsie.de/home/lib/exe/detail.php?id=topic03%3Aitem003&media=topic03:item003:kombi_tog_warnung.png "topic03:item003:kombi_tog_warnung.png")
+![](pics/kombi_tog_warnung.png)
 
 ### TinyTOG
 
@@ -113,7 +113,7 @@ Das Herzstück ist ein AVR-Microcontroller, welcher mit dem TinyTOG-Programm die
 
 Der TinyTOG wandelt also den Widerstandswert des Ölsensors in entsprechende Pulse, die ein TOG geben würde, um. Der erste Puls (high = VCC = 5V) ist immer 20 ms lang, die Pause (low = GND = 0V) zwischen erstem und zweiten Puls hat eine Dauer von 23 bis ca. 44 ms, der zweite Puls (high) ist zwischen 24 und 45 ms lang. Das Intervall (low) zwischen den Signalen berägt 250 ms.
 
-[![](Audi%20S4%20B5%20-%20Kombiinstrument-Umbau%20von%20Vor-Facelift%20zu%20Facelift%20-%20.whoopsie%27s-Dateien/fetch_007.png)](http://www.whoopsie.de/home/lib/exe/detail.php?id=topic03%3Aitem003&media=topic03:item003:kombi_tinytog_puls.png "topic03:item003:kombi_tinytog_puls.png")
+![](pics/ki_tinytog_puls.png)
 
 Folgende Werte ergeben sich für den Ölsensor (049 919 563 B) zur Messung des Widerstandes und damit der Öltemperatur über einen Spannungsteiler mit einem ATtiny25:
 
@@ -154,12 +154,12 @@ Folgende Werte ergeben sich für den Ölsensor (049 919 563 B) zur Messung des W
 
 Die Schaltung für den TinyTOG kann ohne Probleme auf einer Lochraster-Platine aufgebaut werden.
 
-[![](Audi%20S4%20B5%20-%20Kombiinstrument-Umbau%20von%20Vor-Facelift%20zu%20Facelift%20-%20.whoopsie%27s-Dateien/fetch_010.png)](http://www.whoopsie.de/home/lib/exe/detail.php?id=topic03%3Aitem003&media=topic03:item003:kombi_tinytog_schaltplan.png "topic03:item003:kombi_tinytog_schaltplan.png") [![](Audi%20S4%20B5%20-%20Kombiinstrument-Umbau%20von%20Vor-Facelift%20zu%20Facelift%20-%20.whoopsie%27s-Dateien/fetch_004.png)](http://www.whoopsie.de/home/lib/exe/detail.php?id=topic03%3Aitem003&media=topic03:item003:kombi_tinytog_layout.png "topic03:item003:kombi_tinytog_layout.png")
+![](pics/ki_tinytog_schaltplan.png) ![](pics/ki_tinytog_entwurf.png) ![](pics/ki_tinytog.png)
 
 **Benötigte Teile**
 
 Abk. | Anz. | Bezeichnung | Reichelt-Best.-Nr.
-
+-------- | -------- | -------- | --------
 JP1-3 | 1x  | 36-pol. Stiftleiste gerade 2,54mm | SL 1X36G 2,54
       | 1x | Lochrasterplatine | H25PR200
 C1 | 1x | Elektrolyt 0,1µF 100V | RAD 0,1/100  
@@ -273,7 +273,7 @@ Der 93lc86 ist ein serieller Microwire-EEPROM mit 2 kByte Speicher. Dieser EEPRO
 
 Um auf den EEPROM zugreifen zu können muss das KI geöffnet werden und mit einem IC-Programmieradapter, z. B. dem [SI-Prog](http://www.whoopsie.de/home/doku.php?id=topic02:item004 "topic02:item004") verbunden werden. Mit einem passenden Programm, z. B. PonyProg, kann dann der Inhalt des EEPROMs, der Dump, ausgelesen werden.
 
-[![](Audi%20S4%20B5%20-%20Kombiinstrument-Umbau%20von%20Vor-Facelift%20zu%20Facelift%20-%20.whoopsie%27s-Dateien/fetch_002.png)](http://www.whoopsie.de/home/lib/exe/detail.php?id=topic03%3Aitem003&media=topic03:item003:kombi_siprog_93lc86.png "topic03:item003:kombi_siprog_93lc86.png")
+![](pics/ki_siprog_93lc86.png)
 
 Der Dump kann als Datei gespeichert und anschließend mit einem Hex-Editor geöffnet werden. Im Hex-Editor werden 16 Bit üblicherweise hexadezimal mit vier Zeichen (jeweils von 0 bis 9, dann A bis F für dezimal 0 bis 15) angezeigt.
 
@@ -285,7 +285,7 @@ Es gibt Programme, z. B. IMMOread by Gsmservis, welche Login-Codes aus solchen D
 
 Der Login-Code steht an der Stelle 0x7E2 dreimal hintereinander in 16 Bit Länge.
 
-[![](Audi%20S4%20B5%20-%20Kombiinstrument-Umbau%20von%20Vor-Facelift%20zu%20Facelift%20-%20.whoopsie%27s-Dateien/fetch_006.png)](http://www.whoopsie.de/home/lib/exe/detail.php?id=topic03%3Aitem003&media=topic03:item003:kombi_8d0920932jx_login.png "topic03:item003:kombi_8d0920932jx_login.png")
+![](pics/ki_8d0920932jx_login.png)
 
 Die hexadezimale Darstellung muss lediglich in eine dezimale Darstellung gebracht werden.
 
@@ -310,7 +310,7 @@ Mit VCDS ist aus Sicherheitsgründen nur eine Anpassung eines km-Stands von unte
 
 Die Laufleistung wird hier exemplarisch ermittelt und beträgt 311.177 km. Sie wird an der Stelle 0x42 in 8 mal 16 Bit Länge im EEPROM gehalten.
 
-[![](Audi%20S4%20B5%20-%20Kombiinstrument-Umbau%20von%20Vor-Facelift%20zu%20Facelift%20-%20.whoopsie%27s-Dateien/fetch_003.png)](http://www.whoopsie.de/home/lib/exe/detail.php?id=topic03%3Aitem003&media=topic03:item003:kombi_8d0920932jx_laufleistung.png "topic03:item003:kombi_8d0920932jx_laufleistung.png")
+![](pics/ki_8d0920932jx_laufleistung.png)
 
 Zuerst werden die beiden 16 Bit-Pakete in ihre dezimale Darstellung überführt, wobei 0xB403 fünfmal und 0xB404 dreimal vorkommt. Der Einfachheit halber braucht nur ein 16 Bit-Paket überführt werden, da das jeweils andere Paket entweder einen um den Wert 1 höheren oder niedrigeren Wert hat.
 
@@ -411,7 +411,7 @@ Der dezimale Wert 49.217 entspricht dem hexadezimalen Wert 0xC041.
 
 In diesem Dump wurde der Wert 0xC041 in Big-Endian gespeichert, d. h. erst C0 und dann 41. In Little-Endian werden zuerst die niederwertigsten Bits gespeichert, dort wäre zuerst 41 und dann C0 gespeichert.
 
-[![](Audi%20S4%20B5%20-%20Kombiinstrument-Umbau%20von%20Vor-Facelift%20zu%20Facelift%20-%20.whoopsie%27s-Dateien/fetch_008.png)](http://www.whoopsie.de/home/lib/exe/detail.php?id=topic03%3Aitem003&media=topic03:item003:kombi_8d0920932jx_laufleistung_neu.png "topic03:item003:kombi_8d0920932jx_laufleistung_neu.png")
+![](pics/ki_8d0920932jx_laufleistung_neu.png)
 
 Downloads
 ---------
