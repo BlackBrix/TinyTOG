@@ -161,7 +161,7 @@ Die Schaltung für den TinyTOG kann ohne Probleme auf einer Lochraster-Platine a
 Abk. | Anz. | Bezeichnung | Reichelt-Best.-Nr.
 -------- | -------- | -------- | --------
 JP1-3 | 1x  | 36-pol. Stiftleiste gerade 2,54mm | SL 1X36G 2,54
-      | 1x | Lochrasterplatine | H25PR200
+ .    | 1x | Lochrasterplatine | H25PR200
 C1 | 1x | Elektrolyt 0,1µF 100V | RAD 0,1/100  
 C2 | 1x | Elektrolyt 220µF 16V | RAD 220/16  
 D1 | 1x | Schottky 30V 1A | SB 130  
@@ -176,7 +176,7 @@ R1 | 1x | Metallschicht 2W 10kOhm | 2W METALL 10K
 R2 | 1x | Präzisionspoti 100Ohm | 64Y-100  
 T1 | 1x | N-FET 60V 500mA | BS 170  
 IC1 | 1x | Atmel AVR Tiny 25 | ATTINY 25-20 PU  
-    | 1x | IC-Sockel 8-polig | GS 8P  
+.   | 1x | IC-Sockel 8-polig | GS 8P  
 
 Das ursprüngliche Programm für den TinyTOG ist von ALM in Assembler geschrieben worden. Die Schaltung ist von 2004 und sieht einen Atmel AVR Tiny 15 (tiny15) als Microcontroller vor, welcher aber nicht mehr hergestellt wird. Als Ersatz bietet sich ein Atmel AVR Tiny 25 (tiny25) an.
 
