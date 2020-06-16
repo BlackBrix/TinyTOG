@@ -1,5 +1,5 @@
 since ATtiny15 MCU is not available anymore, please see the updated project with ATtiny25 in this subfolder here (German):  
-[https://github.com/BlackBrix/TinyTOG/tree/master/TinyTOG_NEW_with_ATtiny25#tinytog](https://github.com/BlackBrix/TinyTOG/tree/master/TinyTOG_NEW_with_ATtiny25#tinytog)  
+[https://github.com/BlackBrix/TinyTOG/tree/master/TinyTOG_NEW_with_ATtiny25#tinytog](https://github.com/BlackBrix/TinyTOG/tree/master/TinyTOG_NEW_with_ATtiny25#tinytog) (German)  
 * * *
 
 Oil Sensor Emulation - TinyTOG
